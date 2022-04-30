@@ -1,0 +1,37 @@
+.publication-nav-item > .nav-link{
+	color: #0D3191 !important;
+	font-size: 1.1em;
+}
+
+.publication-nav-item .active{
+	color: #FF6600 !important;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.tab-content {
+	margin-top: 1.5em;
+}
+
+/**
+ * PUBLICATION CARD CSS
+ */
+#title-publication-card {
+	font-weight: bolder;
+	color: #0D3191;
+}
+
+#author-publication-card {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #FF6600;
+}
+
+#date-publication-card, #purpose-publication-card {
+	color: #035397;
+	font-style: italic;
+}
+
+.buttons-publication-card {
+	text-align: right;
+}
