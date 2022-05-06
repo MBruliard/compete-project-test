@@ -2,8 +2,6 @@
  * BODY AND MAIN CONTENT STYLE
  */
 body {
-	padding-left: 1em;
-	padding-right: 1em;
 	height: 100vh;
 	display:  flex;
 	margin: 0;
@@ -13,7 +11,6 @@ body {
 
 main {
 	flex: 1;
-	margin-top: 2em;
 	margin-bottom: 2em;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -24,8 +21,6 @@ main {
  * HEADER STYLE
  */
 
-
-
 /**
  * FOOTER STYLE
  */
@@ -34,8 +29,8 @@ footer {
 	padding-bottom: 1em;
 	color: black;
 	margin-top: auto;
-	background: rgb(251,195,15);
-	background: linear-gradient(72deg, rgba(251,195,15,1) 37%, rgba(255,102,0,1) 81%, rgba(212,3,3,1) 100%); 
+	background: rgb(254,200,6);
+	background: linear-gradient(90deg, rgba(254,200,6,1) 0%, rgba(241,152,87,1) 69%, rgba(221,51,43,1) 100%);
 }
 
 footer p {
@@ -69,16 +64,17 @@ footer .footer-lead a {
 }
 
 
-nav > .navbar > .nav-link {
+nav .nav-link {
 	padding-right: 0.3em;
 	padding-left: 0.3em; 
 	font-size: 1.1em;
+	/*color: #0D3191 !important;*/
 }
 
 nav .nav-link:hover {
-	color: #FF6600 !important; 
+	/*color: #0D3191 !important;*/ 
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 /**

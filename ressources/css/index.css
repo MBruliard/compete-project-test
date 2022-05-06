@@ -1,13 +1,22 @@
 /**
  * CREATING CUSTOM JUMBOTRON
  */
+.header-background {
+	height: 30vh;
+	background: rgb(254,200,6);
+	background: linear-gradient(90deg, rgba(254,200,6,1) 0%, rgba(241,152,87,1) 69%, rgba(221,51,43,1) 100%);
+}
+
+
 .header-jumbotron {
-	margin: 5em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	margin-left: 5em;
+	margin-right: 5em;
 	vertical-align: middle;
 }
 
 .header-jumbotron-title {
-
 	font-size: 1.5em;
 	color: #FF6600;
 	font-weight: bolder;
@@ -39,6 +48,7 @@
 }
 
 .aboutus {
+	margin-top: 30vh;
 	border-width: 4px;
  	border-style: solid;
   	border-image: radial-gradient(circle, rgba(255,255,255,1) 89%, rgba(255,255,255,1) 89%, rgba(13,49,145,1) 94%) 1;

@@ -14,6 +14,7 @@
 
 
 		<link href="./ressources/css/compete.css" rel="stylesheet">
+		<link href="./ressources/css/team.css" rel="stylesheet">
 
 		<!-- js part -->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -27,38 +28,36 @@
 	<body>
 		<navbar-component></navbar-component>
 		<main class="container">
-			I am the Team Page
-
-			<div class="card mb-3">
-      <div class="row g-0">
-        <div class="offset-col-2 col-md-6 col-sm-12">
-          <div class="card-body">
-            <h4 class="card-title"><slot name='title' />hello</h4>
-            <p class="card-text"><slot name='text' />Salut</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <img src="ressources/img/profile/Johann.jpeg" class="img-fluid rounded-start img-profile" alt="...">
-        </div>
-      </div>
-      <short-profile-left-component 
-				title="Johann BOUHRIS" 
-				text='1ere description' 
-				profile-picture="ressources/img/profile/Johann.jpeg"
-	  ></short-profile-left-component>
-    </div>
-
-
 			
-			<short-profile-right-component 
-				title="Johann BOUHRIS" 
-				text='deuxieme tentative' 
-				profile-picture="ressources/img/profile/Johann.jpeg"
-			></short-profile-right-component>
-		</main>
+			<div class="row">
+				<div class="col">
+					<h1>Our Team</h1>
+					<hr />
+				</div>
+			</div>
 
-		<footer>
+			<div class="row">
+				<div class="col">
+					<ul class="nav nav-tabs" id="team-tab" role="tablist">
+						<li class="nav-item team-nav-item" role="presentation">
+							<button class="nav-link active" id="esr-tab" data-bs-toggle="tab" data-bs-target="#esr-team" type="button" role="tab" aria-controls="esr-team" aria-selected="true">Early Stage Researchers</button>
+						</li>
+						<li class="nav-item team-nav-item" role="presentation">
+							<button class="nav-link" id="supervisor-tab" data-bs-toggle="tab" data-bs-target="#supervisor-team" type="button" role="tab" aria-controls="supervisor-team" aria-selected="false">Supervisory Board</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="esr-tab-content">
+						<div class="tab-pane fade show active" id="esr-team" role="tabpanel" aria-labelledby="esr-tab">
+							<p>Coming soon...</p>
+						</div>
+						<div class="tab-pane fade" id="supervisor-team" role="tabpanel" aria-labelledby="supervisor-tab">
+							<p>Coming soon ...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>	
 
-		</footer>
+		<footer-component></footer-component>
 	</body>
 </html>

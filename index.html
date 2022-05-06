@@ -21,6 +21,7 @@
 
     <script src="./components/navbar.js" type="text/javascript" defer></script>
     <script src="./components/footer.js" type="text/javascript" defer></script>
+    <script src="./components/news-card.js" type="text/javascript" defer></script>
   </head>
 
   <body>
@@ -28,10 +29,10 @@
     <!-- navbar -->
     <navbar-component></navbar-component>
     
-    <main class="container">
+    <main class="container-fluid">
       
       <!-- header -->
-      <div class="row">
+      <div class="row header-background">
       	<div class="col">
       		<div class="card header-jumbotron shadow p-3 mb-5 bg-body rounded">
       			<div class="row align-middle">
@@ -47,35 +48,32 @@
       	</div>
       </div>
 
+      <div class="container">
+        <!-- who we are -->
+        <div class="row aboutus">
+        	<div class="col">
+        		<h2>About Us</h2>
 
-      <!-- who we are -->
-      <div class="row aboutus">
-      	<div class="col">
-      		<h2>About Us</h2>
+        		<p class="aboutus-text">The aim of COMPETE is to contribute to the fruitful dialogue between the mindset and needs of industries in advanced electromagnetics and the doctoral programs in applied and computational electromagnetics forming the next generation of innovators, researchers and scientists in the field. </p>
+        	</div>
+        </div>
 
-      		<p class="aboutus-text">The aim of COMPETE is to contribute to the fruitful dialogue between the mindset and needs of industries in advanced electromagnetics and the doctoral programs in applied and computational electromagnetics forming the next generation of innovators, researchers and scientists in the field. </p>
-      	</div>
-      </div>
-      
-      <!-- news -->
-      <div class="row">
-      	<div class="col">
-      		<h2>Flash News</h2>
-      	</div>
-      </div>
+        
+        <!-- news -->
+        <div class="row">
+        	<div class="col">
+        		<h2>Flash News</h2>
+        	</div>
+        </div>
 
-      <div class="row">
-      	<div class="col-lg-4 col-md-6 col-sm-12">
-      		news 1
-      	</div>
-
-      	<div class="col-lg-4 col-md-6 col-sm-12">
-      		news 2
-      	</div>
-
-      	<div class="col-lg-4 col-md-6 col-sm-12">
-      		news 3
-      	</div>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+        	<div class="col">
+        		<news-card-component title='The project is starting' text="" date="01/03/2021" image="./ressources/img/COMPETE_brand.png"></news-card-component>
+        	</div>
+          <div class="col">
+            <news-card-component title='Our first ESR meeting' text="The first ESR meeting took place in Turin" date="13/12/2021" image="./ressources/img/meeting/1st_meetingTurin.jpeg"></news-card-component>
+          </div>
+        </div>
       </div>
   	</main>
 

@@ -1,0 +1,14 @@
+.team-nav-item > .nav-link{
+	color: #0D3191 !important;
+	font-size: 1.1em;
+}
+
+.team-nav-item .active{
+	color: #FF6600 !important;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.tab-content {
+	margin-top: 1.5em;
+}

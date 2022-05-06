@@ -5,7 +5,8 @@ class Navbar extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: rgb(254,200,6);
+      background: linear-gradient(90deg, rgba(254,200,6,1) 0%, rgba(241,152,87,1) 69%, rgba(221,51,43,1) 100%); ">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerMainMenu" aria-controls="navbarTogglerMainMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,7 +20,7 @@ class Navbar extends HTMLElement {
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerMainMenu">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item"><a class="nav-link" href="./project.html"><i class="bi bi-kanban"></i> Our Project</a></li>
-              <li class="nav-item"><a class="nav-link" href="./team.html"><i class="bi bi-people-fill"></i> Our team</a></li>
+              <li class="nav-item"><a class="nav-link" href="./team.html"><i class="bi bi-person-circle"></i> Our team</a></li>
               <li class="nav-item"><a class="nav-link" href="./publications.html"><i class="bi bi-journal-bookmark-fill"></i> Publications</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact.html"><i class="bi bi-envelope-fill"></i> Contact</a></li>
             </ul>

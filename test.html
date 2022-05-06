@@ -22,6 +22,7 @@
     <script src="./components/footer.js" type="text/javascript" defer></script>
     <script src="./components/lorem.js" type="text/javascript" defer></script>
     <script src="./components/publication-card.js" type="text/javascript" defer></script>
+    <script src="./components/news-card.js" type="text/javascript" defer></script>
   </head>
 
   <body>
@@ -45,9 +46,23 @@
         </div>
       </div>
 
-      <publication-card-component author='Moi' title="j'ai reussi" date='2022'></publication-card-component>
-      <publication-card-component author="Toi" tile="Vraiment ?" date="2022"></publication-card-component>
+      <publication-card-component></publication-card-component>
+
+      <div class="row row-cols-lg-3 row-cols-md-2 g-4">
+        <div class="col">
+          <news-card-component text="C'est normal je suis la meilleure ! " title="Victoire de Margaux" image="./ressources/img/eu-flag.jpg" date="2022"></news-card-component>
+        </div>
+        <div class="col">
+          <news-card-component text="Comment ça va chez vous ?" title="2eme tour" date='2021'></news-card-component>
+        </div>
+        <div class="col">
+          <news-card-component text="Comment ça va chez vous ?" title="2eme tour" date='2021'></news-card-component>
+        </div>
+      </div>
+
+       
     </main>
+
 
     <footer-component></footer-component>
   </body>
