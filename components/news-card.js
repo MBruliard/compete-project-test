@@ -21,16 +21,33 @@ class NewsCard extends HTMLElement {
 			#card-news {
 				margin-top: 1em;
 				margin-bottom: 0.6em;
-				border: 1.4px solid #035397;
-				border-radius: 15px;
+				border-radius: 15px; 
+				box-shadow: 3px 5px 5px 3px #035397;
+			}
+
+			#image-news {
+				border-radius: 15px 15px 0px 0px; 
+				object-fit: scale-down; 
+				width:100%; 
+				height: auto; 
+				max-height:350px;
+			}
+
+			.card-body {
+				align-text: left; 
+				padding-top: 0.5em; 
+				padding-bottom:0.5em; 
+				padding-left:0.5em; 
+				padding-right:0.5em;
 			}
 
 			h5 {
-				padding-left: 0.5em;
-				padding-right: 0.5em;
-				font-size: 1.2em;
-				font-weight: bold;
-				color: #035397;
+				color: #035397; 
+				font-weight:bold; 
+				font-size: 1.2em; 
+				padding-left: 0.8em; 
+				margin-top: 1em; 
+				margin-bottom: 0.8em;"
 			}
 
 
@@ -40,36 +57,31 @@ class NewsCard extends HTMLElement {
 			}
 
 			.card-footer {
-				border-top: 1.4px solid #035397;
-				border-radius: 0px 0px 15px 15px;
-				padding-left: 1em;
-				padding-right: 1em;
-				text-align: right;
-				font-style: italic;
-				background: rgba(3, 83, 151, 0.5);
-				color: #0D3191;
+				text-align: right; 
+				margin-bottom: 10px; 
+				margin-right: 15px;
 			}
 
-			#image-news {
-				width: 100%;
-				height: auto;
-				max-height: 300px;
-				border-radius: 15px 15px 0px 0px;
-				object-fit: scale-down;
+			#date-news {
+				font-style: italic; 
+				color:#035397;
 			}
+
+			
 		`;
 
 		template.innerHTML =`
-			<div id='card-news' class="card">
-				<img id='image-news' src="..." class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 id='title-news' class="card-title"></h5>
-					<p id='text-news' class="card-text"></p>
-				</div>
-				<div class="card-footer">
-    				<small id='date-news' class="text-muted"></small>
-  				</div>
-			</div>
+			<div id='card-news'>
+            	<img id='image-news' src="./ressources/img/COMPETElogo-noBG.png" class="" alt="COMPETE logo">
+            	
+            	<div class="card-body">
+              		<h5 id='title-news'>here is the title</h5>
+              		<p id='text-news'>And then we will add some text</p>
+            	</div>
+            	<div class="card-footer">
+              		<small id='date-news'></small>
+            	</div>
+          	</div>
 		`;
 	
 		this.attachShadow({mode: 'open'});
