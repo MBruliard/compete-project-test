@@ -63,3 +63,7 @@
 	font-weight: bold;
 	box-shadow: none;
 }
+
+.btn-rounded {
+	border-radius: 50%;
+}

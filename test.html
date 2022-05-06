@@ -13,6 +13,7 @@
 
     <link href="./ressources/css/compete.css" rel="stylesheet">
     <link href="./ressources/css/publications.css" rel="stylesheet">
+    <link href="./ressources/css/btn-compete.css" rel="stylesheet">
 
     <!-- js part -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -23,6 +24,7 @@
     <script src="./components/lorem.js" type="text/javascript" defer></script>
     <script src="./components/publication-card.js" type="text/javascript" defer></script>
     <script src="./components/news-card.js" type="text/javascript" defer></script>
+    <script src="./components/profile-card.js" type="text/javascript" defer></script>
   </head>
 
   <body>
@@ -30,13 +32,65 @@
     <!-- navbar -->
     <navbar-component></navbar-component>
     
-    <main>
+    <main class="container">
+
+      <h1>Profile Picture</h1>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-12">
+          <img id="profile-picture"  class="img-fluid" style="border-radius:10px;" src="./ressources/img/profile/Francesco.jpg">
+        </div>
+        <div class="col-lg-10 col-md-8 col-sm-12">
+          <h5 style="color: #035397; font-weight: bold;" id="profile-name">Francesco Andriulli</h5>
+          <p style="text-align: justify; " id="profile-short-bio">
+            JOHANN BOURHIS received the engineering degree in applied mathematics from the National Institute of Applied Sciences of Rennes, France, jointly to the master degree from the University of Rennes 1, in 2021. His domain of interest are the numerical methods for solving partial differential equations.
+            <br />
+            The purpose of his Ph.D. is to study and to develop solutions for improving the numerical performance of Electromagnetic simulations in low-frequency regime.
+          </p>
+          <div style="text-align:right; font-size:1.2em;" class="profile-buttons">
+            <a href="#" class="btn btn-rounded btn-compete-orange" data-bs-toggle="tooltip" data-bs-placement="top" title="Website"><i class="bi bi-globe"></i></a>
+            <a href="#" class="btn btn-rounded btn-compete-second-blue"  data-bs-toggle="tooltip" data-bs-placement="top" title="Curriculum"><i class="bi bi-file-earmark-person"></i></a>
+            <a href="#" class="btn btn-rounded btn-compete-orange"  data-bs-toggle="tooltip" data-bs-placement="top" title="Github"><i class="bi bi-github"></i></a>
+            <a href="#" class="btn btn-rounded btn-compete-second-blue"  data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+      <hr>
+      <div class="row">
+        <div class="col-lg-10 col-md-8 col-sm-12">
+          <h5 style="color: #035397; font-weight: bold; text-align:right;" id="profile-name">Francesco Andriulli</h5>
+          <p style="text-align: justify;" id="profile-short-bio">
+            JOHANN BOURHIS received the engineering degree in applied mathematics from the National Institute of Applied Sciences of Rennes, France, jointly to the master degree from the University of Rennes 1, in 2021. His domain of interest are the numerical methods for solving partial differential equations.
+            <br />
+            The purpose of his Ph.D. is to study and to develop solutions for improving the numerical performance of Electromagnetic simulations in low-frequency regime.
+          </p>
+          <div style="text-align:left; font-size:1.2em;" class="profile-buttons">
+            <a href="#" class="btn btn-rounded btn-compete-orange" data-bs-toggle="tooltip" data-bs-placement="top" title="Website"><i class="bi bi-globe"></i></a>
+            <a href="#" class="btn btn-rounded btn-compete-second-blue"  data-bs-toggle="tooltip" data-bs-placement="top" title="Curriculum"><i class="bi bi-file-earmark-person"></i></a>
+            <a href="#" class="btn btn-rounded btn-compete-orange"  data-bs-toggle="tooltip" data-bs-placement="top" title="Github"><i class="bi bi-github"></i></a>
+            <a href="#" class="btn btn-rounded btn-compete-second-blue"  data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12">
+          <img id="profile-picture"  class="img-fluid" style="border-radius:10px;" src="./ressources/img/profile/Francesco.jpg">
+        </div>
+      </div>
+
+      <short-profile-left-component
+        name="Samuel NOSAL"
+      ></short-profile-left-component>
+
+      <short-profile-right-component
+        name="Jean-Paul MARTINAUD"
+      ></short-profile-right-component>
+
+
       <h1>Publication card</h1>
 
       <publication-card-component title='A first publication' author="Margaux BRULIARD"></publication-card-component>
       <publication-card-component title='A second publication' author="Margaux BRULIARD"></publication-card-component>
-
-
 
       <h1>News card</h1>
       <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">

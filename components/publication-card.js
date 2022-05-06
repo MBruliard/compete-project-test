@@ -66,7 +66,7 @@ class PublicationCard extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log('news card connected');
+    console.log('publication card connected');
   }
 
   attributeChangedCallback(attrName, oldVal, newVal) {

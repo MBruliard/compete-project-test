@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang='en'>
 
 	<head>
@@ -22,7 +22,7 @@
 
 		<script src="./components/navbar.js" type="text/javascript" defer></script>
 		<script src="./components/footer.js" type="text/javascript" defer></script>
-		<script src="./components/short_profile.js" type="text/javascript" defer></script>
+		<script src="./components/profile-card.js" type="text/javascript" defer></script>
 	</head>
 
 	<body>
@@ -48,10 +48,71 @@
 					</ul>
 					<div class="tab-content" id="esr-tab-content">
 						<div class="tab-pane fade show active" id="esr-team" role="tabpanel" aria-labelledby="esr-tab">
-							<p>Coming soon...</p>
+							<short-profile-left-component
+								picture = "./ressources/img/profile/Johann.jpeg"
+								name = "Johann BOUHRIS"
+								short = "JOHANN BOURHIS received the engineering degree in applied mathematics from the National Institute of Applied Sciences of Rennes, France, jointly to the master degree from the University of Rennes 1, in 2021. His domain of interest are the numerical methods for solving partial differential equations.
+
+								<br/>
+								The purpose of his Ph.D. is to study and to develop solutions for improving the numerical performance of Electromagnetic simulations in low-frequency regime. "
+								website="https://www.det.polito.it/it/personale/scheda/(nominativo)/johann.bourhis"
+							></short-profile-left-component>
+
+							<short-profile-right-component
+								picture = "./ressources/img/profile/Pierrick.JPG"
+								name = "Pierrick CORDEL"
+								short = "PIERRICK CORDEL received the M.Sc. Eng. Degree from the Ecole Nationale Supérieure des Mines de Nancy, France, in 2021 as well as a M.Sc. in Industrial Mathematics from the University of Luxembourg, the same year. Currently, he is doing a PhD thesis at the institute Politecnico di Torino, in Italy. His research focus on time domain integral equations discretized with the convolution quadrature method. "
+								website="https://www.det.polito.it/it/personale/scheda/(nominativo)/pierrick.cordel"
+							></short-profile-right-component>
+
+							<short-profile-left-component
+								picture = "./ressources/img/profile/Margaux.jpeg"
+								name = "Margaux BRULIARD"
+								short = "MARGAUX BRULIARD received the M.SC.Eng degree in Scientific Computing Methods and Applied Mathematics from the Université Sorbonne Paris Nord, Villetaneuse, France, in 2019. She is currently a Ph.D. student at Politecnico di Torino, Turin, Italy, and focuses her research work on a better mathematical approach to impedance boundary conditions and meta-surfaces in electromagnetic simulations. "
+								website="https://www.det.polito.it/it/personale/scheda/(nominativo)/margaux.bruliard"
+							></short-profile-left-component>
+
+							<short-profile-right-component
+								picture = "./ressources/img/profile/Leonardo.jpg"
+								name = "Leonardo POLLINI"
+								short = " LEONARDO POLLINI received the Bachelor of Science degree in aerospace engineering from the Politecnico di Torino, Turin, Italy, in 2018, the Master of Science degree in aerospace engineering with major in fluid dynamics from the Politecnico di Torino, Turin, Italy, in 2021, where he is currently pursuing the Ph.D degree in framework of a Marie Curie EID in collaboration with Politecnico di Torino and Thales. His research interests are in integral equations and computational electromagnetics with a focus on the optimization of the computational methods and the uncertainties propagation.
+
+								<br/>In the Marie Curie project, he will be working on “Advancement of state of the art of optimization, sensibility, and uncertainty quantification empowered by innovative computational techniques of industrial relevance”."
+							></short-profile-right-component>
+
+							<short-profile-left-component
+								picture = "./ressources/img/profile/Paolo.jpg"
+								name = "Paolo RICCI"
+								short = 'PAOLO RICCI received the M.Sc. (Laurea) degree in computer engineering in 2020 from the Politecnico di Torino, Turin, Italy, which he joined as Research Associate in 2021. He is currently pursuing the Ph.D. degree in the framework of a Marie Curie EID in collaboration with Politecnico di Torino and Thales. His research interest are in computational electromagnetics with focus on integral equation formulations, fast solvers, machine learning, and applications for antenna simulations and brain imaging. In 2019, he received the classical guitar diploma from the Conservatorio di musica G. Verdi”, Turin, Italy and in 2016 he achieved the 3rd place in the national finals and the 9th place in the international finals of the International Mathematical Games Championships. He is passionate about music, volleyball, juggling, and role-playing games.
+
+								<br/>In the Marie Curie project, he will be working on "New paradigms in computationally empowered machine learning for industrial EM design and assessments". ' 
+								website="https://www.det.polito.it/it/personale/scheda/(nominativo)/paolo.ricci"
+							></short-profile-left-component>
 						</div>
+
+						<!-- supervisors -->
 						<div class="tab-pane fade" id="supervisor-team" role="tabpanel" aria-labelledby="supervisor-tab">
-							<p>Coming soon ...</p>
+							<short-profile-left-component
+								picture="./ressources/img/profile/Francesco.jpg"
+								name="Francesco ANDRIULLI"
+								cv="./ressources/docs/Andriulli_LongCV.pdf"
+								website="https://www.det.polito.it/personale/scheda/(nominativo)/francesco.andriulli"
+							></short-profile-left-component>
+							
+							<short-profile-right-component
+								name="Giuseppe VECCHI"
+								website="https://www.det.polito.it/personale/scheda/(nominativo)/giuseppe.vecchi"
+							></short-profile-right-component>
+							
+							<short-profile-left-component
+								name="Jean-Paul MARTINAUD"
+								website="https://www.thalesgroup.com/en"
+							></short-profile-left-component>
+
+							<short-profile-right-component
+								name="Samuel NOSAL"
+								website="https://www.thalesgroup.com/en"
+							></short-profile-right-component>
 						</div>
 					</div>
 				</div>
