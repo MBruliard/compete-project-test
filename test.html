@@ -31,23 +31,14 @@
     <navbar-component></navbar-component>
     
     <main>
-      <div class="card">
-        <h5 class="card-header" id="title-publication-card">Title</h5>
-        <div class="card-body">
-          <p class="card-text" id="author-publication-card">Author</p>
-          <p class="card-text" id="date-publication-card">Date</p>
-          <p class="card-text" id="purpose-publication-card">Purpose of publication</p>
-          
-          <div class="buttons-publication-card">
-            <a href="#" id="publisher-publication-card" class="btn btn-floating btn-compete-second-blue">Editor</a>
-            <button id="licence-publication-card" type="button" class="btn btn-floating btn-compete-orange"><i class="bi bi-download"></i> Licence</button>
-            <a href='#' id="download-publication-card" class="btn btn-floating btn-compete-blue"><i class="bi bi-download"></i> Download</a>
-          </div>
-        </div>
-      </div>
+      <h1>Publication card</h1>
 
-      <publication-card-component></publication-card-component>
+      <publication-card-component title='A first publication' author="Margaux BRULIARD"></publication-card-component>
+      <publication-card-component title='A second publication' author="Margaux BRULIARD"></publication-card-component>
 
+
+
+      <h1>News card</h1>
       <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
         <div class="col">
           <div id='card-news' class="" style="margin-top: 1em; margin-bottom: 0.6em; border-radius: 15px; box-shadow: 3px 5px 5px 3px #035397;">
@@ -62,15 +53,6 @@
               <small id='date-news' class="" style=" font-style: italic; color:#035397;">published today</small>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <news-card-component text="C'est normal je suis la meilleure ! " title="Victoire de Margaux" image="./ressources/img/eu-flag.jpg" date="2022"></news-card-component>
-        </div>
-        <div class="col">
-          <news-card-component text="Comment ça va chez vous ?" title="2eme tour" date='2021'></news-card-component>
-        </div>
-        <div class="col">
-          <news-card-component text="Comment ça va chez vous ?" title="2eme tour" date='2021'></news-card-component>
         </div>
       </div>
 

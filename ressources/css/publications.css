@@ -16,13 +16,21 @@
 /**
  * PUBLICATION CARD CSS
  */
+.publication-card {
+	margin-top: 1.5em;
+	margin-left: 1em;
+	margin-right: 1em;
+	box-radius: 15px;
+}
+
 #title-publication-card {
+	font-size: 1.3em;
 	font-weight: bolder;
 	color: #0D3191;
 }
 
 #author-publication-card {
-	font-size: 1.1em;
+	font-size: 1.0em;
 	font-weight: bold;
 	color: #FF6600;
 }

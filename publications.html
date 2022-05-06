@@ -22,12 +22,13 @@
 
 		<script src="./components/navbar.js" type="text/javascript" defer></script>
 		<script src="./components/footer.js" type="text/javascript" defer></script>
+		<script src="./components/publication-card.js" type="text/javascript" defer></script>
 	</head>
 
 	<body>
 		<navbar-component></navbar-component>
 		
-		<main>
+		<main class="container">
 			<div class="row">
 				<div class="col">
 					<h1>Our Publications</h1>
@@ -42,12 +43,17 @@
 							<button class="nav-link active" id="journal-publications-tab" data-bs-toggle="tab" data-bs-target="#journal-publications" type="button" role="tab" aria-controls="journal-publications" aria-selected="true">Journal Publications</button>
 						</li>
 						<li class="nav-item publication-nav-item" role="presentation">
-							<button class="nav-link" id="conference-papers-tab" data-bs-toggle="tab" data-bs-target="#conference-papers" type="button" role="tab" aria-controls="conference-papers" aria-selected="false">Profile</button>
+							<button class="nav-link" id="conference-papers-tab" data-bs-toggle="tab" data-bs-target="#conference-papers" type="button" role="tab" aria-controls="conference-papers" aria-selected="false">Conference Papers</button>
 						</li>
 					</ul>
 					<div class="tab-content" id="publication-tab-content">
 						<div class="tab-pane fade show active" id="journal-publications" role="tabpanel" aria-labelledby="journal-publications-tab">
-							<p>Coming soon...</p>
+							<publication-card-component
+								title="Publication Example"
+								author="One of the fellow"
+								date="2022"
+								purpose="This is an example of a publication card. Each publication will have his own card with custom text"
+							></publication-card-component>
 						</div>
 						<div class="tab-pane fade" id="conference-papers" role="tabpanel" aria-labelledby="conference-papers-tab">
 							<p>Coming soon ...</p>

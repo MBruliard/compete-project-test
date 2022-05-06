@@ -15,35 +15,58 @@ const publication_card_text = `
 </div>
 `;
 
-
+/**
+ * PublicationCard for COMPETE website
+ */
 class PublicationCard extends HTMLElement {
   
   static get observedAttributes() {
-    return ['title', 'author', 'date', 'purpose', 'publisher', 'publisherlink', 'downloadlink'];
+    return ['title', 'author', 'authorlink', 'date', 'purpose', 'publisher', 'publisherlink', 'downloadlink'];
   }
 
   constructor() {
     super();
     
-    const main = document.getElementsByTagName('main')[0];
+    // template attribute to add elements
+    let template = document.createElement('template');
+    let style = document.createElement('style');
 
-    let parent = document.createElement("div");
-    parent.setAttribute('class', 'card');
-    main.appendChild(parent);
+    // style to add
+    style.innerHTML =`
 
-    let title = document.createElement("h5");
-    title.setAttribute('class', 'card-header title-publication-card');
-    parent.appendChild(title);
+    `;
 
-    let card_body = document.createElement("div");
-    card_body.setAttribute('class', 'card-body');
-    parent.appendChild(card_body);
 
-    this.shadow = this.attachShadow({mode: 'open'});
+    // template to add
+    template.innerHTML =`
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="./ressources/css/btn-compete.css">
+      <link rel="stylesheet" href="./ressources/css/publications.css">
+      
+      <div class="card publication-card">
+        <h5 class="card-header" id="title-publication-card">Unknown Title</h5>
+        <div class="card-body">
+          <p class="card-text" id="author-publication-card">???</p>
+          <p class="card-text" id="date-publication-card"></p>
+          <p class="card-text" id="purpose-publication-card"></p>
+          
+          <div class="buttons-publication-card">
+            <a href='#' id='authorlink' class="btn btn-compete-orange"><i class="bi bi-person-fill"></i> The author</a>
+            <a href="#" id="publisher-publication-card" class="btn btn-compete-second-blue"><i class="bi bi-journals"></i> Publisher</a>
+            <a href='#' id="download-publication-card" class="btn btn-compete-orange"><i class="bi bi-download"></i> Download</a>
+          </div>
+        </div>
+      </div>
+    `;
+
+    this.attachShadow({mode: 'open'});
+    this.shadowRoot.appendChild(style);
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 
   connectedCallback() {
-    this.innerHTML = publication_card_text;
+    console.log('news card connected');
   }
 
   attributeChangedCallback(attrName, oldVal, newVal) {
@@ -51,31 +74,39 @@ class PublicationCard extends HTMLElement {
         * attrName gives us the order of each attribute
         * newVal gives input for each attribute in the same order of attrName
         */
-      switch (attrName) {
-        case 'title':
-          this.getElementById('title-publication-card').appendChild(
-            document.createTextNode(newVal)
-            );
-          break;
-        case 'author':
-        document.getElementById('author-publication-card').innerText = newVal;
+      /**
+    * attrName gives us the order of each attribute
+    * newVal gives input for each attribute in the same order of attrName
+    */
+    switch (attrName) {
+      case 'title':
+        let title = this.shadowRoot.getElementById('title-publication-card');
+        title.innerHTML = newVal;
+        break;
+      case 'author':
+        let author = this.shadowRoot.getElementById('author-publication-card');
+        author.innerHTML = newVal;
         break;
       case 'date':
-        document.getElementById('date-publication-card').innerText = newVal;
+        let date = this.shadowRoot.getElementById('date-publication-card');
+        date.innerHTML = newVal;
         break;
       case 'purpose':
-        document.getElementById('purpose-publication-card').innerText = newVal;
+        this.shadowRoot.getElementById('purpose-publication-card').innerHTML = newVal;
         break;
       case 'publisher':
-        document.getElementById('publisher-publication-card').innerText = newVal;
+        this.shadowRoot.getElementById('publisher-publication-card').innerHTML = "<i class='bi bi-journals'></i> " + newVal;
         break;
       case 'publisherlink':
-        console.log(newVal);
+        this.shadowRoot.getElementById('publisher-publication-card').href = newVal;
         break;
       case 'downloadlink':
-        console.log(newVal);
+        this.shadowRoot.getElementById('download-publication-card').href = newVal;
         break;
-      }
+      case 'authorlink':
+        this.shadowRoot.getElementById('author-publication-card').href = newVal;
+        break;
+    }
   }
 }
 customElements.define('publication-card-component', PublicationCard);

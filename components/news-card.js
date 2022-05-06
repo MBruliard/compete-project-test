@@ -59,7 +59,7 @@ class NewsCard extends HTMLElement {
 			.card-footer {
 				text-align: right; 
 				margin-bottom: 10px; 
-				margin-right: 15px;
+				padding-right: 15px;
 			}
 
 			#date-news {
@@ -71,7 +71,8 @@ class NewsCard extends HTMLElement {
 		`;
 
 		template.innerHTML =`
-			<div id='card-news'>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     		<div id='card-news'>
             	<img id='image-news' src="./ressources/img/COMPETElogo-noBG.png" class="" alt="COMPETE logo">
             	
             	<div class="card-body">

@@ -1,0 +1,65 @@
+/**
+ * BTN STYLE
+ */ 
+.btn-compete-orange {
+	border-style: solid;
+	border-color: #FF6600;
+	color: #FF6600;
+}
+
+.btn-compete-orange:hover {
+	border-style: solid;
+	border-color: #FF6600;
+	color: #FF6600;
+	font-weight: bold;
+}
+
+.btn-compete-orange:focus {
+	border-style: solid;
+	border-color: #FF6600;
+	color: #FF6600;
+	font-weight: bold;
+	box-shadow: none;
+}
+
+.btn-compete-blue {
+	border-style: solid;
+	border-color: #0D3191;
+	color: #0D3191;
+}
+
+.btn-compete-blue:hover {
+	border-style: solid;
+	border-color: #0D3191;
+	color: #0D3191;
+	font-weight: bold;
+}
+
+.btn-compete-blue:focus {
+	border-style: solid;
+	border-color: #0D3191;
+	color: #0D3191;
+	font-weight: bold;
+	box-shadow: none;
+}
+
+.btn-compete-second-blue {
+	border-style: solid;
+	border-color: #035397;
+	color: #035397;
+}
+
+.btn-compete-second-blue:hover {
+	border-style: solid;
+	border-color: #035397;
+	color: #035397;
+	font-weight: bold;
+}
+
+.btn-compete-second-blue:focus {
+	border-style: solid;
+	border-color: #035397;
+	color:# 035397;
+	font-weight: bold;
+	box-shadow: none;
+}
