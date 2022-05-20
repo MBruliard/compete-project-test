@@ -19,6 +19,7 @@ class Navbar extends HTMLElement {
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerMainMenu">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="./index.html"><i class="bu bi-house-fill"></i> Home</a></li>
               <li class="nav-item"><a class="nav-link" href="./project.html"><i class="bi bi-kanban"></i> Our Project</a></li>
               <li class="nav-item"><a class="nav-link" href="./team.html"><i class="bi bi-person-circle"></i> Our team</a></li>
               <li class="nav-item"><a class="nav-link" href="./publications.html"><i class="bi bi-journal-bookmark-fill"></i> Publications</a></li>

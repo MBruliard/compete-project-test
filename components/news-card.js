@@ -22,7 +22,7 @@ class NewsCard extends HTMLElement {
 				margin-top: 1em;
 				margin-bottom: 0.6em;
 				border-radius: 15px; 
-				box-shadow: 3px 5px 5px 3px #035397;
+				box-shadow: 3px 5px 12px 3px #b6dafc;
 			}
 
 			#image-news {

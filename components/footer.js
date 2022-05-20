@@ -31,10 +31,8 @@ class Footer extends HTMLElement {
           </div>
         </div>
 
-
-        <hr>
-        <div class="row text-center">
-          <p class="text-center" style="font-size:0.8em; font-style:italic;">Copyright ©2021. All rights reserved.</p>
+        <div style="margin-top: 2em;" class="row text-center">
+          <p class="text-center" style="font-size:0.8em; font-style:italic;">Copyright ©2022. All rights reserved.</p>
         </div>
       </div>
     </footer>

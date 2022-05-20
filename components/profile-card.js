@@ -52,7 +52,7 @@ class ShortProfileLeft extends HTMLElement{
       
       <div class="row profile-row">
         <div class="col-lg-2 col-md-4 col-sm-12">
-          <img id="profile-picture"  class="img-fluid" src="./ressources/img/clogo_background-white.png">
+          <img id="profile-picture"  class="img-fluid" src="./ressources/img/profile/blank-avatar.png">
         </div>
         <div class="col-lg-10 col-md-8 col-sm-12">
           <h5 id="profile-name"></h5>
@@ -153,7 +153,7 @@ class ShortProfileRight extends HTMLElement{
         </div>
 
         <div class="col-lg-2 col-md-4 col-sm-12">
-          <img id="profile-picture"  class="img-fluid" src="./ressources/img/clogo_background-white.png">
+          <img id="profile-picture"  class="img-fluid" src="./ressources/img/profile/blank-avatar.png">
         </div>
       </div>
     `;
