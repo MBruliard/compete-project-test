@@ -77,6 +77,11 @@ nav .nav-link:hover {
 	font-size: 1.1em;
 }
 
+nav .active {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 /**
  * HEADER TITLE STYLE
  */
