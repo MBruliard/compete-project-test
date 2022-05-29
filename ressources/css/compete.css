@@ -79,11 +79,13 @@ nav .nav-link:hover {
 	/*color: #0D3191 !important;*/ 
 	font-weight: bold;
 	font-size: 1.1em;
+	border-bottom:  2px solid ;
 }
 
 nav .active {
     font-weight: bold;
     font-size: 1.1em;
+    border-bottom:  2px solid ;
 }
 
 /**

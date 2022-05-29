@@ -1,0 +1,23 @@
+.profile-row {
+  margin-top: 1em;
+  margin-bottom: 5em;
+}
+
+.profile-buttons {
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+  font-size:1.3em;
+}
+
+#profile-picture {
+  border-radius:10px;
+}
+
+#profile-name {
+  color: #035397;
+  font-weight: bold;
+}
+
+#profile-short-bio {
+  text-align: justify; 
+}
