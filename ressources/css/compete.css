@@ -18,8 +18,12 @@ main {
 
 
 /**
- * HEADER STYLE
+ * NAVBAR STYLE
  */
+.compete-color {
+	background: rgb(254,200,6);
+    background: linear-gradient(90deg, rgba(254,200,6,1) 0%, rgba(241,152,87,1) 69%, rgba(221,51,43,1) 100%); 
+}
 
 /**
  * FOOTER STYLE
