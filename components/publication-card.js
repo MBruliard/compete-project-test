@@ -21,7 +21,7 @@ const publication_card_text = `
 class PublicationCard extends HTMLElement {
   
   static get observedAttributes() {
-    return ['title', 'author', 'authorlink', 'date', 'purpose', 'publisher', 'publisherlink', 'downloadlink'];
+    return ['title', 'author', 'date', 'purpose', 'publisher', 'publisherlink', 'downloadlink'];
   }
 
   constructor() {
@@ -52,7 +52,6 @@ class PublicationCard extends HTMLElement {
           <p class="card-text" id="purpose-publication-card"></p>
           
           <div class="buttons-publication-card">
-            <a href='#' id='authorlink' class="btn btn-compete-orange"><i class="bi bi-person-fill"></i> The author</a>
             <a href="#" id="publisher-publication-card" class="btn btn-compete-second-blue"><i class="bi bi-journals"></i> Publisher</a>
             <a href='#' id="download-publication-card" class="btn btn-compete-orange"><i class="bi bi-download"></i> Download</a>
           </div>
@@ -102,9 +101,6 @@ class PublicationCard extends HTMLElement {
         break;
       case 'downloadlink':
         this.shadowRoot.getElementById('download-publication-card').href = newVal;
-        break;
-      case 'authorlink':
-        this.shadowRoot.getElementById('author-publication-card').href = newVal;
         break;
     }
   }

@@ -5,7 +5,7 @@
 class ShortProfileRight extends HTMLElement{
 
   static get observedAttributes() {
-    return ['name', 'role', 'short', 'cv', 'website', 'github', 'linkedin', 'picture'];
+    return ['name', 'role', 'short', 'cv', 'website', 'github', 'linkedin', 'picture', 'scholar'];
   }
 
   constructor() {
@@ -138,6 +138,9 @@ class ShortProfileRight extends HTMLElement{
         break;
       case 'cv':
         this.createProfileButton('profile-cv', newVal, "bi bi-file-earmark-person", "btn-compete-second-blue", "CV");
+        break;
+      case 'scholar':
+        this.createProfileButton('profile-scholar', newVal, "bi bi-google", 'btn-compete-orange', "Google Scholar");
         break;
     }
   }

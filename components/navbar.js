@@ -108,7 +108,7 @@ class Navbar extends HTMLElement {
     //
     this.addLiToNavbar('index-navbar', "./index.html", 'bi bi-house-fill', ' Home');
     this.addLiToNavbar('project-navbar', "./project.html", "bi bi-kanban",' Our Project');
-    this.addLiToNavbar('team-navbar', "./team.html", "bi bi-person-circle", ' Our team');
+    this.addLiToNavbar('team-navbar', "./team.html", "bi bi-people", ' Our team');
     this.addLiToNavbar('publications-navbar', "./publications.html", "bi bi-journal-bookmark-fill", ' Publications');
     this.addLiToNavbar('contact-navbar', "./contact.html", "bi bi-envelope-fill", ' Contact');
   }
